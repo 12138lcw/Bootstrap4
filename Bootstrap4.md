@@ -69,5 +69,34 @@ class名
 2. w-100 撑满
 3. img-thumbnail 加个圆角边框
 4. 图片对齐方式 浮动布局float-left；给父元素加.clearfix .rounded圆角效果；d-xxx xxx表示转换成什么类型的盒子；图片居中两种方法1加.mx-auto 需转换元素类型,2.给父盒子加.text-center
-5. H5新picture标签 里面写source标签 media="(min-width: 800px)" 属性表示不同屏幕显示不同图片
+5. H5新picture标签 里面写source标签 media="(min-widt h: 800px)" 属性表示不同屏幕显示不同图片
 6. 图文框
+
+### 表格
+
+1. 在table 加table类即可生成
+2. table-dark在table加则全部产生颜色反转对比 thead-light | thead-dark表头也可以
+3. table-striped 定义tbody隔行换色 条纹状表格可配合table-fark使用
+4. table-bordred 产生表格边框 table-borderless 无边框
+5. table-sm 使表格更紧凑
+6. 语义化 table-active.... 使行或列或单格换色
+7. bg-info .... 改变背景颜色
+8. caption标签表示该表格的标题
+
+### 边框
+
+1. border-top|四个方向指定
+2. border-top-0 删除指定边框
+3. border-xxx 边框颜色
+4. rounded-方向
+5. rounded-circle 圆型边框
+6. rounded-pill 两边圆型
+7. rounded-0 清除圆形
+8. clearfix 清除浮动
+
+### 颜色display
+
+1. text-xxx 
+2. d-{sm|md|lg|xl}-inline|block|inline|block|flex|table-row|table-cell
+3. d-{sm|md|lg|xl}-none 隐藏元素 
+4. d-print-block  打印时显示
