@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="carousel slide carousel-fade " data-ride='carousel' data-interval='2000' id="myCarousel">
+				<ol class="carousel-indicators">
+					<li data-target='#myCarousel' data-slide-to='0' ></li>
+					<li data-target='#myCarousel' data-slide-to='1' ></li>
+					<li data-target='#myCarousel' data-slide-to='2' ></li>
+					<!-- <li data-target='#myCarousel'></li> -->
+					<!-- <li data-target='#myCarousel'></li> -->
+					<!-- <li></li> -->
+					<!-- <li></li> -->
+				</ol>
+				<div class="carousel-inner" >
+					<div class="carousel-item active" style="height: 500px;">
+						<img src="./OIP-C.jpg" alt="" class="d-block w-100 img-fluid">
+						<div class="carousel-caption d-none d-sm-block">
+							<h5>标题1</h5>
+						</div>
+					</div>
+					<div class="carousel-item" data-interval="5000" style="height: 500px;">
+						<img src="./微信图片_20230608202016.jpg" alt="" class="d-block w-100">
+						<div class="carousel-caption">
+							<h2>标题2</h2>
+						</div>
+					</div>
+					<div class="carousel-item" style="height: 500px;">
+						<img src="./OIP-C.jpg" alt="" class="d-block w-100">
+					</div>
+				</div>
+				<a class="carousel-control-prev text-primary" data-slide='prev' href="#myCarousel"><span class="carousel-control-prev-icon"></span></a>
+				<a href="#myCarousel" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+			</div>
+		</div>
+		<script src="./jquery.js"></script>
+		<script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+	</body>
+</html>

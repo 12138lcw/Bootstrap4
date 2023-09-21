@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+	</head>
+	<body>
+		<div class="container">
+			<form action="">
+				<div class="form-group">
+					<label for="">文本输入</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group" >
+					<label for="">文本输入只可读</label>
+					<input type="text" class="form-control" readonly>
+				</div>
+				<div class="form-group">
+					<label for="">文本输入</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="">文件传入</label>
+					<!-- <textarea class="form-control"></textarea> -->
+					<input type="file" class="form-control-file">
+				</div>
+				<div class="form-group">
+					<label for="">年薪</label>
+					<!-- <textarea class="form-control"></textarea> -->
+					<input type="range" name="" id="" class="form-control-range">
+					<small class="form-text muted ">请输入</small>
+				</div>
+				<div class="form-group form-check-inline">
+					<div class="form-check ">
+						<input type="checkbox" name="" id="" class="form-check-input">
+						<label for="" class="form-check-label">	苹果</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" name="" id="" class="form-check-input">
+						<label for="" class="form-check-label">	香蕉</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" name="" id="" class="form-check-input">
+						<label for="" class="form-check-label">	菠萝</label>
+					</div>
+					<!-- 没有标签？ -->
+					<div class="form-check">
+						<input type="checkbox" name="" id="" class="form-check-input">
+					</div>
+					<div class="form-check">
+						<input type="checkbox" name="" id="" class="form-check-input">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label for="">邮箱</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label for="">密码</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="">密码</label>
+					<input type="text" class="form-control">
+				</div>
+				<button>登录</button>
+				<p>栅格</p>
+				<div class="form-row">
+					<div class="col-6 form-group">
+							<label for="">邮箱</label>
+							<input type="text" class="form-control">		 
+					</div>
+					<div class="col-6 form-group">
+							<label for="">密码</label>
+							<input type="text" class="form-control">
+					</div>
+				</div>
+				<h2>----------</h2>
+				<div class="form-group row">
+							<label for="" class="col-2 col-form-label">邮箱</label>
+							<input type="text" class="form-control col-10 form-control-plaintext" disabled>		 
+					 
+				</div>
+				<button class="offset-2">登录</button>
+				<fieldset disabled>
+					<div class="form-group row">
+								<label for="" class="col-2 col-form-label">邮箱</label>
+								<input type="text" class="form-control col-10">		 
+								<input type="text" class="form-control col-10">		 
+								<input type="text" class="form-control col-10">		 
+								
+					</div>
+				</fieldset>
+				<h3>IOS风格</h3>
+				  
+					<div class="custom-control custom-switch ">
+						<input type="checkbox" name="" id="customSwitch" class="custom-control-input">
+						<label for="" class="custom-checkbox-label">123</label>
+					</div>
+				 <div class="form-group">
+				 	<label for="">年薪</label>
+				 	<!-- <textarea class="form-control"></textarea> -->
+				 	<input type="range" name="" id="" class="custom-select">
+				 	<small class="form-text muted ">请输入</small>
+					<input type="file" class="custom-file-input">
+				 </div>
+				 <div class="form-group">
+					 <div class="custom-file">
+						 <input type="file" class="custom-file-input">
+					 </div>
+				 </div>
+			</form>
+			<script>
+				const ran = document.querySelector('input[type=range')
+				console.log(ran);
+				
+				ran.addEventListener('change',()=>{
+					console.log(ran.value);
+				})
+			</script>
+		</div>
+	</body>
+</html>

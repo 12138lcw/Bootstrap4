@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="alert  alert-danger alert-dismissible fade show "  >
+				<h2 class="alert-heading">title</h2>
+				<strong>警告</strong>
+				<a href="" class="alert-link">123</a>
+				<button class="close " data-dismiss='alert'>&times;</button>
+			</div>
+			<button id="btn">显示</button>
+		</div>
+		<script src="./jquery.js"></script>
+		<script src="./bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+		<script>
+			$('#btn').click(()=>{
+				const div =  `<div class="alert  alert-danger alert-dismissible fade show "  >
+				<h2 class="alert-heading">title</h2>
+				<strong>警告</strong>
+				<a href="" class="alert-link">123</a>
+				<button class="close " data-dismiss='alert'>&times;</button>
+			</div>`
+				$('.container').append(div)
+			})
+		</script>
+	</body>
+</html>

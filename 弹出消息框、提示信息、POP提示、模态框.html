@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+	</head>
+	<body>
+		<div class="container">
+			<!-- 弹出消息框 -->
+			<div class="toast" id="mytoast" style="position: fixed; top: 10px ; right: 30px;" data-autohide='true' data-delay='5000' >
+				<div class="toast-header" >
+					<img src="./OIP-C.jpg" alt="" width="20px"> <strong class="mr-auto">logo</strong>
+					<small>刚刚123</small>
+					<button class="close" data-dismiss='toast'>&times;</button>
+				</div>
+				<div class="toast-body">
+					内容
+				</div>
+			</div>
+			<button id="btn1">显示弹出消息</button>
+			<!-- 模态框 -->
+			<div class="modal fade" tabindex="-1" id="mymodal" data-animation='true' data-delay="2000" data-backdrop='false' >
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div class="modal-title">标题</div>
+							<button class="close" data-dismiss='modal'>&times;</button>
+						</div>
+						<div class="modal-body">内容
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						内容尼尔</div>
+						<div class="modal-footer">
+							<button class="btn btn-dark" data-dismiss='modal'>取消</button>
+							<button class="btn btn-primary">确认</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="btn" data-toggle='modal' data-target='#mymodal'>显示模态框</button>
+			<!-- 冒泡提示 -->
+			<br>
+			<br><span class="d-inline-block" tabindex='0' data-placement='top' data-toggle='tooltip' data-html='true' data-animation='true' title='<em>内容</em>'>
+			<button class="btn btn-primary " style="pointer-events: none;" disabled >冒泡</button></span>
+<!-- 			<button class="btn btn-primary " disabled data-placement='top' data-toggle='tooltip' data-html='true' data-animation='false' title='<em>内容</em>'>冒泡</button> -->
+			<span class="d-inline-block"data-toggle="popover" data-content='内容' tabindex="0" >
+				<!-- <button class="btn btn-primary" disabled data-toggle="popover" data-content='内容' title="标题">POP</button> -->
+				<button class="btn btn-primary" disabled title="标题" style="pointer-events: none;">POP</button>
+			</span>
+		</div>
+		<script src="./jquery.js"></script>
+		<script src="./bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+		<script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+		<script>
+			$('#btn1').click(()=>{
+				$('#mytoast').toast('show')
+			})
+			$('#btn2').click(()=>{
+				$('#mymodal').modal('show')
+			})
+			// $("[data-toggle='tooltip']").tooltip()
+			 $("[data-toggle='tooltip']").tooltip()
+			 $('[data-toggle="popover"]').popover()
+		</script>
+	</body>
+</html>
